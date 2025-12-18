@@ -1,7 +1,100 @@
-<!DOCTYPE html> 
-		<html lang="pl-PL"> 
-		<html> 
-     			<head> 
-            		 <meta charset="utf-8"> 
-            		 <title> Jakub Metuszek </title> 
-     		</head> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tabela płyt głównych</title>
+<style>
+    table {
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        width: 100%;
+        max-width: 1000px;
+    }
+    th, td {
+        border: 2px solid black;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+    }
+    th {
+        background-color: #4ea72e; /* zielony nagłówków */
+        color: black;
+    }
+    td.data {
+        background-color: #fff200; /* żółte pola */
+    }
+    td.model {
+        background-color: #4ea72e; /* zielona pierwsza kolumna */
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Model płyty głównej</th>
+        <th>Chipset</th>
+        <th>Gniazdo CPU (Socket)</th>
+        <th>Format płyty</th>
+        <th>Typ pamięci RAM</th>
+        <th>Typ chłodzenia</th>
+    </tr>
+
+    <tr>
+        <td class="model">ASUS ROG Strix B550-F</td>
+        <td class="data">B550</td>
+        <td class="data">AM4</td>
+        <td class="data">ATX</td>
+        <td class="data">DDR4 do 128</td>
+        <td class="data">Radiatory pasywne na VRM</td>
+    </tr>
+
+    <tr>
+        <td class="model">MSI Z490-A PRO</td>
+        <td class="data">Z490</td>
+        <td class="data">LGA1200</td>
+        <td class="data">ATX</td>
+        <td class="data">DDR4 do 128</td>
+        <td class="data">Radiatory pasywne na VRM</td>
+    </tr>
+
+    <tr>
+        <td class="model">Gigabyte X670 AORUS</td>
+        <td class="data">X670</td>
+        <td class="data">AM5</td>
+        <td class="data">ATX</td>
+        <td class="data">DDR5 do 128</td>
+        <td class="data">Radiatory pasywne na VRM/M.2</td>
+    </tr>
+
+    <tr>
+        <td class="model">ASRock B450M Steel</td>
+        <td class="data">B450</td>
+        <td class="data">AM4</td>
+        <td class="data">mATX</td>
+        <td class="data">DDR4 do 64</td>
+        <td class="data">Radiatory pasywne na VRM</td>
+    </tr>
+
+    <tr>
+        <td class="model">ASUS Prime H610M-K</td>
+        <td class="data">H610</td>
+        <td class="data">LGA1700</td>
+        <td class="data">mATX</td>
+        <td class="data">DDR4 do 64</td>
+        <td class="data">Brak radiatorów</td>
+    </tr>
+
+    <tr>
+        <td class="model">MSI PRO Z790-P</td>
+        <td class="data">Z790</td>
+        <td class="data">LGA 1700</td>
+        <td class="data">ATX</td>
+        <td class="data">DDR5, do 128 GB</td>
+        <td class="data">Radiatory pasywne na VRM/M.2</td>
+    </tr>
+</table>
+
+</body>
+</html>
